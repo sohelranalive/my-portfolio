@@ -1,0 +1,65 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+
+.banner-img {
+  /* margin-top: 100px; */
+  -webkit-animation: morph 8s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(assets/IMG-20220214-WA0006.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  /* height: 80%; */
+  /* position: relative; */
+  transition: all 1s ease-in-out;
+  /* width: 70%; */
+}
+
+.custom-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-scrollTop {
+  position: fixed;
+  bottom: 25px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: rgb(96 165 250);
+  right: 1%;
+  background: none;
+  border-radius: 50px;
+  padding: 0px;
+  border: none;
+  opacity: 0.7;
+}
+
+.divide-x-2 {
+  border-right: 2px solid #FF0000;
+  /* Replace #FF0000 with your desired color */
+}
