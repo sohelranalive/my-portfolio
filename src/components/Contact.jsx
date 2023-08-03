@@ -1,7 +1,26 @@
 import { Slide } from 'react-awesome-reveal';
 import { MdLocationPin, MdEmail } from 'react-icons/md';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 const Contact = () => {
+
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_7sr2rr7', 'template_rssek01', form.current, 'VYPDX2N0B3cnkgwSS')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        form.current.reset();
+    };
+
     return (
         <div className="px-10 md:px-20 py-20" id='contact'>
             <Slide direction='left'>
@@ -39,19 +58,19 @@ const Contact = () => {
 
                 </div>
                 <div className="md:w-1/2">
-                    <form>
+                    <form ref={form} onSubmit={sendEmail}>
                         <div className="form-control mb-2">
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type="text" name='name' placeholder="Enter your name" className="input input-bordered" required />
+                            <input type="text" name='from_name' placeholder="Enter your name" className="input input-bordered" required />
                         </div>
 
                         <div className="form-control mb-2">
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="email" name='toy_name' placeholder="Enter Your Email" className="input input-bordered" required />
+                            <input type="email" name='from_email' placeholder="Enter Your Email" className="input input-bordered" required />
                         </div>
 
                         <div className="form-control">

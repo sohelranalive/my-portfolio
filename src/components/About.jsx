@@ -18,7 +18,7 @@ const About = () => {
                     </Slide>
                     <br />
                     <p className='text-justify'>
-                        I am currently transitioning my career into the development sector with a strong interest in front-end development. My goal is to create outstanding user experiences and contribute to innovative software projects. I am actively seeking job opportunities that align with my passion and expertise. Let&apos;s explore how I can contribute to your company&apos;s goals and drive positive outcomes together.
+                        I am concentrating on a career in the development sector and I have an intense interest in full stack development. My goal is to create outstanding user experiences and contribute to innovative software projects. I am actively seeking job opportunities that align with my passion and expertise. Let&apos;s explore how I can contribute to your company&apos;s goals and drive positive outcomes together.
                     </p>
                     <br />
                     <h1 className='text-3xl font-bold'>

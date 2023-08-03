@@ -13,11 +13,11 @@ const Banner = () => {
             {/* tittle and image */}
             <div className='flex flex-col-reverse md:flex md:flex-row gap-8 md:gap-0'>
                 {/* text area */}
-                <div className='md:w-1/2 px-0 md:px-20 space-y-6 flex flex-col'>
-                    <h1 className="text-5xl font-bold">Front-End React<br />Developer</h1>
+                <div className='md:w-1/2 px-0 md:px-20 space-y-6 flex flex-col justify-center'>
+                    <h1 className="text-4xl font-bold">Full Stack Developer</h1>
                     <h3 className="text-2xl md:text-justify">
                         <TypeAnimation
-                            sequence={['Hi, I am Sohel Rana. A passionate Front-end React Developer based in Dhaka, Bangladesh.']}
+                            sequence={['Hi, I am Sohel Rana. A Computer Science graduate and passionate full stack developer based in Dhaka, Bangladesh.']}
                             wrapper="span"
                             speed={50}
                         />
