@@ -42,7 +42,7 @@ const Contact = () => {
                         </div>
                         <div className='text-xl'>
                             <p className='font-bold'>Location</p>
-                            <p className='opacity-90'>Dhaka, Bangladesh</p>
+                            <p className='opacity-90'>Frankfurt, Germany</p>
                         </div>
                     </div>
                     {/* Email */}

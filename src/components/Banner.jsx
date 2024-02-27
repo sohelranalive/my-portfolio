@@ -15,9 +15,9 @@ const Banner = () => {
                 {/* text area */}
                 <div className='md:w-1/2 px-0 md:px-20 space-y-6 flex flex-col justify-center'>
                     <h1 className="text-4xl font-bold">Full Stack Developer</h1>
-                    <h3 className="text-2xl md:text-justify">
+                    <h3 className="text-2xl">
                         <TypeAnimation
-                            sequence={['Hi, I am Sohel Rana. A Computer Science graduate and passionate full stack developer based in Dhaka, Bangladesh.']}
+                            sequence={['Hello, I am Sohel Rana, a passionate web developer with expertise in the MERN stack. Currently, I am pursuing my Masters in Engineering in Information Technology while residing in Frankfurt, Germany.']}
                             wrapper="span"
                             speed={50}
                         />
@@ -25,7 +25,7 @@ const Banner = () => {
                     <div className='flex items-center space-x-4 text-3xl'>
                         <a href='https://github.com/sohelranalive'><FaGithub /></a>
                         <a href='https://www.linkedin.com/in/sohelranalive/'><FaLinkedin /></a>
-                        <a href="https://drive.google.com/uc?export=download&id=1SMtNmQodT3_DYPDgICxHY6f3PmqOuTaZ" download><FaDownload /></a>
+                        <a href="https://drive.google.com/uc?export=download&id=1Y9DFvQf2pMqnzIdtnyZPfI8LXjgZn-0U" download><FaDownload /></a>
                     </div>
                 </div>
 
