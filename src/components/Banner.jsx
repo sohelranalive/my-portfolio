@@ -12,7 +12,7 @@ const Banner = () => {
   return (
     <div className="bg-slate-50 flex flex-col px-10 sm:px-10 md:px-20">
       {/* Title and image banner */}
-      <div className="min-h-[300px] md:min-h-[400px] flex flex-col-reverse md:flex md:flex-row">
+      <div className="min-h-[300px] md:min-h-[400px] flex flex-col-reverse gap-8 md:flex md:flex-row md:gap-0">
         {/* Text area */}
         <div className="min-h-[300px] md:min-h-[400px] w-full md:w-1/2 px-0 md:px-10 lg:px-20 space-y-1 flex flex-col justify-center">
           <h1 className="text-4xl font-bold">
